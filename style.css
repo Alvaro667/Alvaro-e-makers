@@ -1,5 +1,7 @@
 body {
-    background-image: src="JK00063.jpg";
+    background-image: url("fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #902bff;
     
     
