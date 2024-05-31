@@ -4,40 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Perfil do Usuário GameDame</title>
+    <link rel="stylesheet" href="style-conta.css">
 </head>
 
-<body style="background-color: #FBF6F0;">
-    <header style="background-color: #FBF6F0; border-color: #BDB9B5; border-radius: 3px;">
+<body>
+    <header>
+        <div class="logo">
+            <img src="image1.png" alt="Logo">
+        </div>
         <nav>
-            <a href="Página principal.html"><img src="image1.png" width="60"></a>
-            <a href="">Lançamentos</a> |
-            <a href="">Populares</a> |
-            <a href="">Gêneros</a> |
-            <a href="">Promoções</a> |
-            <a href=" ">Conta</a>
+            <ul>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Populares</a></li>
+                <li><a href="#">Gêneros</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Conta</a></li>
+            </ul>
         </nav>
-        <input type="search"><input type="submit" value="Q">
+        <div class="search">
+            <input type="search" id="input">
+            <input type="submit" value="Q">
+        </div>
     </header>
 
     <main>
-        <section style="background-color: #FBF6F0; display: inline-block; width: 50%;">
-            <h1 style="color: #4B626C;">Olá, << Nome do Usuário >> </h1>
-            <h2 style="color: #4B626C;">Seu email é nomeusuario@email.com</h2>
-            <h2 style="color: #4B626C;">Seu CPF é 123.456.789-00</h2>
-            <br>
-            <a href=""><button  style="background-color: #4B626C; color: white; border: 0cap;">Alterar Dados /</button></a>
-            <br>
-            <button  style="background-color: #4B626C;  color: white;  border: 0cap;">Excluir Conta X</button>
-            <br>
-            <a href=" "><button style="border: 0cap; background-color: #A3ACAE; color: #FBF6F0;">Tela do admim</button></a>
+        <section class="user-info">
+            <h1>Olá, &lt;&lt;Nome do Usuário&gt;&gt;</h1>
+            <p>Seu email é <span>nomeusuario@email.com</span></p>
+            <p>Seu CPF é <span>123.456.789-00</span></p>
+            <button>Alterar Dados /</button>
+            <button>Excluir Conta X</button>
+            <button class="admin-button">Tela do admim</button>
         </section>
-        <aside style="background-color: #4B626C; display: inline-block; width: 49%">
-            <h2 href="" style="color: white;">Jogos adquiridos:</h2>
+        <aside class="games">
+            <h2>Jogos adquiridos:</h2>
             <section>
-                <a href=""><img src="game2.png" width=""></a>
-                <a href=""><img src="game2.png" width=""></a>
-                <a href=""><img src="game2.png" width=""></a>
-                <a href=""><img src="game2.png" width=""></a>
+                <figure class="game">
+                    <a href="#"><img src="game2.png" alt="SpongeBob" width=""></a>
+                    <figcaption>100/100</figcaption>
+                </figure>
+                <figure class="game">
+                    <a href="#"><img src="game2.png" alt="Deliver Us Mars" width=""></a>
+                    <figcaption>95/100</figcaption>
+                </figure>
+                <figure class="game">
+                    <a href="#"><img src="game2.png" alt="God of War" width=""></a>
+                    <figcaption>75/100</figcaption>
+                </figure>
+                <figure class="game">
+                    <a href="#"><img src="game2.png" alt="Death Stranding" width=""></a>
+                    <figcaption>Adicionar Avaliação</figcaption>
+                </figure>
             </section>
         </aside>
     </main>
