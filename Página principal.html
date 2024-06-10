@@ -4,33 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Index GameDame</title>
+    <link rel="stylesheet" href="style-index.css">
 </head>
 
 <body>
-    <header style="background-color: #FBF6F0">
-        <a href="Página principal.html"><img src="image1.png" width="60"></a>
-        <a href="">Lançamentos</a> |
-        <a href="">Populares</a> |
-        <a href="">Gêneros</a> |
-        <a href="">Promoções</a> |
-        <a href="Conta.html">Conta</a>
-        <input type="search"><input type="submit" value="Q">
+    <header>
+        <nav>
+            <ul>
+                <li><img src="image1.png" alt="Logo"></li>
+                <li>Lançamentos</li>
+                <li>Populares</li>
+                <li>Gêneros</li>
+                <li>Promoções</li>
+                <li><a href="Conta.html">Conta</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" id="input">
+            <input type="submit" value="Q">
+        </div>
     </header>
-    <main style="background-color: #FBF6F0">
-        <br>
-        <button><</button>
-        <a href=" "><img src="game1.png" width=" "></a>
-        <button>></button>
+
+    <main>
+        <button>&lt;</button>
+        <div role="games">
+            <img src="game001.png" id="jogo1">
+            <img src="game01.png" id="jogo2">
+        </div>
+        <a href="#"><img src="game1.png"></a>
+        <button>&gt;</button>
     </main>
-    <footer style="background-color: #4B626C">
-        <br>
-        <a href="" style="color: white;">Lançamentos</a>
+    <footer>
+        <h1>Lançamentos</h1>
         <section>
-            <a href=""><img src="game2.png" width=""></a>
-            <a href=""><img src="game2.png" width=""></a>
-            <a href=""><img src="game2.png" width=""></a>
-            <a href=""><img src="game2.png" width=""></a>
-            <a href=""><img src="game2.png" width=""></a>
+            <img src="game2.png">
+            <img src="game3.png">
+            <img src="game4.png">
+            <img src="game5.png">
+            <img src="game6.png">
+            <a href="#"><button>!</button></a>
         </section>
     </footer>
 </body>
