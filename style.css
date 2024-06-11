@@ -1,32 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FBF6F0;
+    font-size: 32px;
+    font-weight: 300;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
     background-color: #FBF6F0;
     color: #FBF6F0;
-    border-bottom: 3px solid #A3ACAE;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header nav img {
-    width: 50px;
+    width: 100px;
+    margin-bottom: 1px;
 }
 
 header nav ul {
+    align-items: stretch;
+    margin: auto auto auto 2%;
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
 header nav ul li {
+    margin-top: auto;
+    margin-bottom: auto;
+
     display: inline;
+    color: #4B626C;
+    justify-content: space-evenly;
+
 }
 
 header nav ul li a {
@@ -34,15 +43,23 @@ header nav ul li a {
     text-decoration: none;
 }
 
-header .search input {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
+header .search {
+    margin: auto 2% auto auto;
 }
 
 header .search #input {
     background-color: #CED1CD;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    display: inline;
 }
+
+/*header .search .lupa{
+
+
+}*/
 
 main {
     display: flex;
@@ -87,6 +104,11 @@ main {
     padding: 20px;
     color: #FBF6F0;
     width: 45%;
+    flex-direction: column;
+}
+
+main div{
+    flex-direction: row;
 }
 
 .games h2 {
@@ -108,4 +130,10 @@ main {
 
 .games .game p {
     font-size: 18px;
+}
+
+footer{
+    background-color: #4B626C;
+    color: #FBF6F0;
+    padding: 2%;
 }
