@@ -1,3 +1,10 @@
+.neutro{
+    background-color: #FBF6F0;
+    box-shadow: none;
+    text-decoration: none;
+    color: #4B626C;
+}
+
 body {
     font-family: "montserrat", sans-serif;
     margin: 0;
@@ -23,22 +30,24 @@ header nav img {
 header nav ul {
     align-items: stretch;
     margin: auto 0 auto 2%;
-    list-style: none;
     display: flex;
     gap: 15px;
 }
 
 header nav ul li {
     margin:auto auto;
-
     display: inline;
     color: #4B626C;
     justify-content: space-evenly;
-
 }
 
-header nav ul li a {
+ul{
+    list-style: none;
+}
+
+ul li a {
     text-decoration: none;
+    color: #4B626C;
 }
 
 .search {
@@ -69,16 +78,35 @@ header nav ul li a {
     background-color: #CED1CD;
 }
 
+header h1{
+    color: #4B626C;
+    font-family: "montserrat", sans-serif;
+    font-weight: normal;
+}
+
 main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
+main a{
+    width: 40px;
+}
+
+.seta{
+    background-color: #FBF6F0;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
 .column{
     display: flexbox;
     flex-direction: column;
-    width: 49%;
+    width: 40%;
 }
 
 .user-info {
