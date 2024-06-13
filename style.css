@@ -7,6 +7,7 @@
 
 body {
     font-family: "montserrat", sans-serif;
+    color: #4B626C;
     margin: 0;
     padding: 0;
     background-color: #FBF6F0;
@@ -76,6 +77,7 @@ ul li a {
     position: relative;
     border: none;
     background-color: #CED1CD;
+    cursor: pointer;
 }
 
 header h1{
@@ -87,7 +89,6 @@ header h1{
 main {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
 }
 
 main a{
@@ -112,18 +113,19 @@ main a{
 .user-info {
     background-color: #FBF6F0;
     padding: 20px;
-    border-radius: 10px;
+    margin: 5%;
 }
 
 .user-info h1 {
-    font-size: 24px;
+    font-size: 48px;
     margin-bottom: 10px;
-    color: #4B626C;
+    font-weight: normal;
 }
 
 .user-info p {
     margin: 5px 0;
-    color: #4B626C;
+    font-size: 32px;
+    font-weight: normal;
 }
 
 .user-info button {
