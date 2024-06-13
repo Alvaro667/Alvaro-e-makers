@@ -22,15 +22,14 @@ header nav img {
 
 header nav ul {
     align-items: stretch;
-    margin: auto auto auto 2%;
+    margin: auto 0 auto 2%;
     list-style: none;
     display: flex;
     gap: 15px;
 }
 
 header nav ul li {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin:auto auto;
 
     display: inline;
     color: #4B626C;
@@ -39,32 +38,47 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #4B626C;
     text-decoration: none;
 }
 
-header .search {
+.search {
     margin: auto 2% auto auto;
-}
-
-header .search #input {
     background-color: #CED1CD;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 5px;
     border-radius: 15px;
     border: none;
     display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-/*header .search .lupa{
+.search #input {
+    background-color: #CED1CD;
+    border: none;
+    display: inline;
+    padding: 0 0 0 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
 
-
-}*/
+.lupa{
+    display: inline;
+    position: relative;
+    border: none;
+    background-color: #CED1CD;
+}
 
 main {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+.column{
+    display: flexbox;
+    flex-direction: column;
+    width: 49%;
 }
 
 .user-info {
@@ -136,4 +150,10 @@ footer{
     background-color: #4B626C;
     color: #FBF6F0;
     padding: 2%;
+}
+
+footer button{
+    border: 2px solid white;
+    background-color: #4B626C;
+    size: 30px;
 }
