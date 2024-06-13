@@ -5,7 +5,7 @@
     color: #4B626C;
 }
 
-body {
+body{
     font-family: "montserrat", sans-serif;
     color: #4B626C;
     margin: 0;
@@ -15,7 +15,7 @@ body {
     font-weight: 300;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     background-color: #FBF6F0;
@@ -23,19 +23,19 @@ header {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-header nav img {
+header nav img{
     width: 100px;
     margin-bottom: 1px;
 }
 
-header nav ul {
+header nav ul{
     align-items: stretch;
     margin: auto 0 auto 2%;
     display: flex;
     gap: 15px;
 }
 
-header nav ul li {
+header nav ul li{
     margin:auto auto;
     display: inline;
     color: #4B626C;
@@ -46,12 +46,12 @@ ul{
     list-style: none;
 }
 
-ul li a {
+ul li a{
     text-decoration: none;
     color: #4B626C;
 }
 
-.search {
+.search{
     margin: auto 2% auto auto;
     background-color: #CED1CD;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -62,7 +62,7 @@ ul li a {
     margin-bottom: auto;
 }
 
-.search #input {
+.search #input{
     background-color: #CED1CD;
     border: none;
     display: inline;
@@ -86,7 +86,7 @@ header h1{
     font-weight: normal;
 }
 
-main {
+main{
     display: flex;
     justify-content: space-between;
 }
@@ -110,25 +110,25 @@ main a{
     width: 40%;
 }
 
-.user-info {
+.user-info{
     background-color: #FBF6F0;
     padding: 20px;
     margin: 5%;
 }
 
-.user-info h1 {
+.user-info h1{
     font-size: 48px;
     margin-bottom: 10px;
     font-weight: normal;
 }
 
-.user-info p {
+.user-info p{
     margin: 5px 0;
     font-size: 32px;
     font-weight: normal;
 }
 
-.user-info button {
+.user-info button{
     display: block;
     margin: 10px 0;
     padding: 10px;
@@ -139,40 +139,55 @@ main a{
     cursor: pointer;
 }
 
-.user-info button.admin-button {
+.pPrincipal{
+    flex-direction: row;
+    margin:auto auto auto auto;
+}
+
+#setaE{
+    margin: auto 1% auto 3%;
+}
+
+#setaD{
+    margin: auto 3% auto 1%;
+}
+
+.user-info button.admin-button{
     background-color: #A3ACAE;
 }
 
-.games {
+.games{
     background-color: #4B626C;
     padding: 20px;
     color: #FBF6F0;
     width: 45%;
     flex-direction: column;
-}
+    z-index: -1;
+    height: 100%;
+ }
 
 main div{
     flex-direction: row;
 }
 
-.games h2 {
+.games h2{
     margin-bottom: 20px;
 }
 
-.games .game {
+.games .game{
     display: flex;
     align-items: end;
     margin-bottom: 10px;
 }
 
-.games .game img {
+.games .game img{
     width: 100px;
     height: 100px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
-.games .game p {
+.games .game p{
     font-size: 18px;
 }
 
