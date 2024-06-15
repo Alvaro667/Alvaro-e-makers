@@ -5,62 +5,67 @@
     <meta charset="UTF-8">
     <title>Perfil do Usuário GameDame</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4278eba02.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href="Página principal.html"><img src="imagens/image1.png" alt="Logo"></a>
-                <li>Lançamentos</li>
-                <li>Populares</li>
-                <li>Gêneros</li>
-                <li>Promoções</li>
-                <li><a href="#">Conta</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <input type="search" id="input">
-            <div class="lupa">
-                <input type="submit" value="Q">
+    <div id="cWraper">
+        <header>
+            <nav>
+                <ul>
+                    <a href="Página principal.html"><img src="imagens/image1.png" alt="Logo"></a>
+                    <li>Lançamentos</li>
+                    <li>Populares</li>
+                    <li>Gêneros</li>
+                    <li>Promoções</li>
+                    <li><a href="#">Conta</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="search" id="input">
+                <button type="submit" class="lupa">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;" id="LUPA"></i>
+                </button>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <section class="user-info">
-            <h1>Olá, &lt;&lt;Nome do Usuário&gt;&gt;</h1>
-            <p>Seu email é <span>nomeusuario@email.com</span></p>
-            <p>Seu CPF é <span>123.456.789-00</span></p>
-            <button>Alterar Dados /</button>
-            <button>Excluir Conta X</button>
-            <button class="admin-button">Tela do admim</button>
-        </section>
-        <aside class="games">
-            <h2>Jogos adquiridos:</h2>
-            <section>
-                <figure class="game">
-                    <a href="#"><img src="imagens/game2.png" alt="SpongeBob" width=""></a>
-                    <figcaption>100/100</figcaption>
-                </figure>
-                <figure class="game">
-                    <a href="#"><img src="imagens/game3.png" alt="Deliver Us Mars" width=""></a>
-                    <figcaption>95/100</figcaption>
-                </figure>
-                <figure class="game">
-                    <a href="#"><img src="imagens/game4.png" alt="God of War" width=""></a>
-                    <figcaption>75/100</figcaption>
-                </figure>
-                <figure class="game">
-                    <a href="#"><img src="imagens/game5.png" alt="Death Stranding" width=""></a>
-                    <figcaption>Adicionar Avaliação</figcaption>
-                </figure>
+        <main>
+            <section class="user-info">
+                <h1>Olá, &lt;&lt;Nome do Usuário&gt;&gt;</h1>
+                <p>Seu email é <span>nomeusuario@email.com</span></p>
+                <p>Seu CPF é <span>123.456.789-00</span></p>
+                <button>Alterar Dados <i class="fa-sharp fa-solid fa-pen fa-lg" style="color: #ffffff;"></i></button>
+                <button>Excluir Conta <i class="fa-solid fa-trash-can fa-lg" style="color: #ffffff;"></i></button>
+                <button class="admin-button">Tela do admim</button>
             </section>
-        </aside>
-    </main>
+            <aside class="games">
+                <h2>Jogos adquiridos:</h2>
+                <section>
+                    <figure class="game">
+                        <img src="imagens/game2.png" alt="SpongeBob">
+                        <figcaption>100/100</figcaption>
+                    </figure>
+                    <figure class="game">
+                        <img src="imagens/game3.png" alt="Deliver Us Mars">
+                        <figcaption>95/100</figcaption>
+                    </figure>
+                    <figure class="game">
+                        <img src="imagens/game7.png" alt="God of War">
+                        <figcaption>75/100</figcaption>
+                    </figure>
+                    <figure class="game">
+                        <img src="imagens/game5.png" alt="Death Stranding">
+                        <figcaption>Adicionar Avaliação</figcaption>
+                    </figure>
+                    <button><i class="fa-sharp fa-solid fa-cart-shopping fa-flip-horizontal fa-2xl" style="color: #ffffff;"></i></button>
+                </section>
+            </aside>
+        </main>
+    </div>
 </body>
 
 </html>
