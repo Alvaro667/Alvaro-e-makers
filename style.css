@@ -10,7 +10,7 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #FBF6F0;
     color: #FBF6F0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -23,14 +23,15 @@ header nav img{
 
 header nav ul{
     align-items: stretch;
-    margin: auto 0 auto 2%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
-    gap: 15px;
+    max-width: 70vw;
 }
 
 header nav ul li{
-    margin:auto auto;
-    display: inline;
+    margin: auto 0 auto 5%;
+    display: flex;
     color: #4B626C;
     justify-content: space-evenly;
 }
@@ -51,12 +52,12 @@ ul li a{
     border-radius: 15px;
     border: none;
     display: inline;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 11vw;
 }
 
 .search #input{
     background-color: #CED1CD;
+    max-width: 7vw;
     border: none;
     display: inline;
     padding: 0 0 0 0;
@@ -68,6 +69,8 @@ ul li a{
 .lupa{
     display: inline;
     position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
     border: none;
     background-color: #CED1CD;
     cursor: pointer;
@@ -82,23 +85,20 @@ main a{
     width: 40px;
 }
 
-.seta{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: auto;
+.aSeta{
     margin-right: auto;
-    font-size: 30px;
+
 }
 
 .column{
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     width: 30%;
     background-color: transparent;
     padding-left: auto;
     padding-right: auto;
     margin-left: 5%;
+    text-align: center;
 }
 
 .column h1{
@@ -107,6 +107,18 @@ main a{
     font-weight: normal;
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
+
+}
+
+.seta{
+    background-color: #FBF8F4;
+    border-radius: 25%;
+    border: none;
+    cursor: pointer;
+    margin-left: 25vw;
+    margin-right: auto;
+    font-size: 30px;
 }
 
 .fundo{
@@ -124,10 +136,11 @@ main a{
     border-radius: 5px;
     border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-    margin: 31px;
+    margin: 2vh;
     font-style: normal;
     font-size: 24px;
     padding: 10px;
+    min-width: 23vw;
 }
 
 .user-info{
@@ -137,14 +150,15 @@ main a{
 }
 
 .user-info h1{
-    font-size: 48px;
-    margin-bottom: 10px;
-    font-weight: normal;
+    font-size: 42px;
+    margin-top: 15vh;
+    margin-bottom: 6vh;
+    font-weight: 500;
 }
 
 .user-info p{
-    margin: 5px 0;
-    font-size: 32px;
+    margin: 3vh 0;
+    font-size: 28px;
     font-weight: normal;
 }
 
@@ -157,70 +171,123 @@ main a{
     color: #FBF6F0;
     border-radius: 5px;
     cursor: pointer;
+    min-width: 23vw;
+    font-size: 28px;
+    font-weight: 100;
 }
 
 .pPrincipal{
+    display: inline-flex;
     flex-direction: row;
     margin:auto auto auto auto;
+    font-size: xx-small;
+
 }
 
+.pPrincipal a{
+    margin: 2vw;
+}
+
+.pPrincipal #alinha{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+
 #setaE{
-    margin: auto 1% auto 3%;
+    margin: auto 1% auto auto;
+    border: none;
+    background-color: transparent;
+    font-size: 100px;
+    color: #97A4A2;
+    font-weight: 100;
 }
 
 #setaD{
     margin: auto 3% auto 1%;
+    border: none;
+    background-color: transparent;
+    font-size: 100px;
+    color: #97A4A2;
+    font-weight: 100;
 }
 
 .user-info button.admin-button{
     background-color: #A3ACAE;
 }
 
+#games{
+    margin-left: 2vw;
+    display: inline-block;
+}
+
+#games img{
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 .games{
     background-color: #4B626C;
     padding: 20px;
     color: #FBF6F0;
-    width: 45%;
-    flex-direction: column;
+    width: 40%;
     z-index: -1;
     height: 100%;
+    display: block;
  }
-
-main div{
-    flex-direction: row;
-}
 
 .games h2{
     margin-bottom: 20px;
+    margin-left: 9%;
+    font-weight: 300;
+    font-size: 32px;
 }
 
 .games .game{
-    display: flex;
+    display: block;
     align-items: end;
     margin-bottom: 10px;
 }
 
 .games .game img{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-right: 10px;
+    margin: 10px;
 }
 
-.games .game p{
+.games .game figcaption{
     font-size: 18px;
+    margin-left: 10px;
+}
+
+.games button{
+    border: 2px solid white;
+    background-color: #4B626C;
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
 }
 
 footer{
     background-color: #4B626C;
     color: #FBF6F0;
     padding: 2%;
+    align-items: stretch;
+}
+
+footer section{
+    align-items: stretch;
 }
 
 footer button{
     border: 2px solid white;
     background-color: #4B626C;
-    size: 30px;
+    height: 74px;
+    width: 74px;
+    border-radius: 50%;
+}
+
+footer button i{
+    color: #000;
 }
 
 .neutro{
@@ -231,6 +298,7 @@ footer button{
     font-size: 20px;
     line-height: 24px;
     color: #97A4A2;
+    margin-top: 17vh;
 }
 
 #cWraper{
